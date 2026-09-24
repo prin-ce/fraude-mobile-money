@@ -1,0 +1,77 @@
+# =========================
+# Données
+# =========================
+
+data/raw/*
+data/processed/*
+
+# Fichiers temporaires de test
+data/demo_invalid.csv
+
+# =========================
+# Modèles
+# =========================
+
+# Ignorer les modèles non validés
+models/*
+
+# Conserver uniquement les deux artefacts gelés
+!models/h2_residual_xgb_v1.joblib
+!models/economic_probability_v1.joblib
+
+# =========================
+# Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# Environnements Python
+# =========================
+
+.venv/
+.venv312/
+venv/
+env/
+
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+# =========================
+# IDE / OS
+# =========================
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Cache / build Python
+# =========================
+
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
